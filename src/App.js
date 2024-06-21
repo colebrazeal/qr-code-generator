@@ -17,7 +17,7 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   const config = {
-    headers: { Authorization: 'Bearer c6d55070-2f37-11ef-b538-7fc535c003f8' }
+    headers: { Authorization: `Bearer ${process.env.REACT_APP_API_KEY}` }
   }
 
 const bodyParameters = {
